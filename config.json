@@ -1,0 +1,35 @@
+{
+    "PLATFORM": {
+        "AIRTABLE": {
+            "ENDPOINT_URL": "https://api.airtable.com"
+        }
+    },
+    "APPS": {
+        "FINANCIAL_TRACKER_1": {
+            "TARGET": {
+                "TABLE_ID": "tbl8Y5PzoGqOluNzX",
+                "TABLE_NAME": "Personal statement 2022-23 (Dev)",
+                "BASE_ID": "appwvNxLhoiLYparm",
+                "FIELDS": ["S. no.", "Transaction Date", "Value date", "Description", "Chq / Ref No.", "Debit", "Credit", "Balance", "Dr / Cr"]
+            },
+            "BANK_INPUTS": {
+                "KOTAK_PERSONAL": {
+                    "skip_lines_at_beginning": 13,
+                    "skip_lines_at_end": 5,
+                    "payment_id_param_seq": [4, 3],
+                    "mapping": {
+                        "S. no.": 0,
+                        "Transaction Date": 1,
+                        "Value date": 2,
+                        "Description": 3,
+                        "Chq / Ref No.": 4,
+                        "Debit": 5,
+                        "Credit": 6,
+                        "Balance": 7,
+                        "Dr / Cr": 8
+                    }
+                }
+            }
+        }
+    }
+}
